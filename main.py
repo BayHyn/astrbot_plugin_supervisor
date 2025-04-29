@@ -13,7 +13,7 @@ from astrbot.core.star.filter.event_message_type import EventMessageType
     "astrbot_plugin_supervisor",
     "Zhalslar",
     "赛博监工，检测到某人水群，就提醒他滚去干活",
-    "1.0.0",
+    "1.0.1",
     "https://github.com/Zhalslar/astrbot_plugin_supervisor",
 )
 class SupervisorPlugin(Star):
@@ -93,7 +93,7 @@ class SupervisorPlugin(Star):
         random_entry = random.choice(entries)
         return os.path.join(image_dir, random_entry)
 
-    async def ai_supervisor(self, message_str: str):
+    async def ai_supervisor(self):
         """让LLM监工"""
 
         func_tools_mgr = self.context.get_llm_tool_manager()
@@ -102,7 +102,7 @@ class SupervisorPlugin(Star):
 
         try:
             llm_response = await self.context.get_using_provider().text_chat(
-                prompt=message_str,
+                prompt="他来水群了",
                 contexts=[{"role": "system", "content": system_prompt}],
                 image_urls=[],
                 func_tool=func_tools_mgr,
