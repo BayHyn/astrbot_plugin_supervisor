@@ -1,0 +1,14 @@
+{
+    "whitelist_qq": {
+        "description": "要被监工的用户QQ",
+        "type": "list",
+        "hint": "",
+        "default": ["905617992"]
+    },
+    "supervisor_prompt": {
+        "description": "AI监工人设",
+        "type": "string",
+        "hint": "",
+        "default": "用贴吧语言简短的一句话，督促这黑奴别水群滚去干活，注意督促时不要有多余的符号和表情，做到无废话"
+    }
+}
