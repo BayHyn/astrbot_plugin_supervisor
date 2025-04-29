@@ -3,6 +3,7 @@
 
 ![:name](https://count.getloli.com/@astrbot_plugin_supervisor?name=astrbot_plugin_supervisor&theme=minecraft&padding=6&offset=0&align=top&scale=1&pixelated=1&darkmode=auto)
 
+
 # astrbot_plugin_supervisor
 
 _✨ [astrbot](https://github.com/AstrBotDevs/AstrBot) 监工插件 ✨_  
